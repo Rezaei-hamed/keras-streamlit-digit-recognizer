@@ -38,5 +38,6 @@ if canvas_result.image_data is not None:
 
     prediction = model.predict(img_array)
     predicted_digit = np.argmax(prediction)
+    confidence =np.max(prediction)
 
-    st.write(f"Modellen tror att det är: {predicted_digit}")
+    st.write(f"Modellen tror att det är: {predicted_digit}(säkerhet:{confidence*100:.1f}%)")

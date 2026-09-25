@@ -62,4 +62,8 @@ Testat appen med egna ritningar tidigare, så jag hade upptäckt problemet med 8
 Implementera beskärning och centrering av ritningen, och lägga till en knapp för att rensa canvasen.
 
 **G eller VG?**
-[skriv din egen bedömning här]
+**Vilket betyg tycker du själv att arbetet motsvarar – G eller VG?**
+
+Jag tycker att arbetet motsvarar VG. Jag har inte bara fått koden att fungera, utan också förstått och kunnat förklara varför den fungerar som den gör — till exempel varför `st.cache_resource` behövs istället för `st.cache_data`, och varför användarens ritning måste normaliseras och formateras exakt som MNIST-datan för att modellen ska förstå den.
+
+Jag har också gjort och motiverat egna tekniska val, som att skilja på träning av modellen (`train_model.py`) och själva appen (`app.py`). Jag testade dessutom en förbättring (att beskära och centrera ritningen, likt MNIST-formatet), men stötte på tekniska problem som jag inte hann lösa i tid. Istället för att lämna in trasig kod valde jag att gå tillbaka till en enklare men fungerande lösning, och beskriver detta försök och varför det inte fungerade i rapporten. Jag tycker att det visar att jag kan resonera kring lösningens begränsningar och alternativa vägar, inte bara att jag kan bygga något som fungerar.
