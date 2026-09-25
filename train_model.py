@@ -28,8 +28,10 @@ model.fit(
 )
 
 test_loss, test_acc = model.evaluate(x_test, y_test)
-print(f"\nFinal test accuracy: {test_acc * 100:.2f}% | loss: {test_loss:.4f}")
+print(f"\n Final test accuracy: {test_acc * 100:.2f}% | loss: {test_loss:.4f}")
 
 Path("model").mkdir(parents=True, exist_ok=True)
 model.save("model/mnist_model.keras")
 print("Modellen sparades")
+
+
