@@ -24,9 +24,10 @@ Sen byggde jag en Streamlit-app med `streamlit-drawable-canvas`, ett bibliotek s
 
 Ett problem jag stötte på var att canvas-biblioteket krävde en extra inställning (`return_image_data=True`) för att jag skulle kunna komma åt bilden alls. Utan den fick jag ett felmeddelande.
 
+
 ## Resultat
 
-Modellen fick 97,58 % rätt på testdatan. Appen fungerar och ger en prediktion direkt när man ritar. För siffror som är tydligt ritade (till exempel 1, 3, 7) fungerar det bra och stabilt.
+Modellen fick 97,58 % rätt på testdatan. Appen fungerar och ger en prediktion direkt när man ritar. För siffror som är tydligt ritade (till exempel 1, 3, 7) fungerar det bra och stabilt. Appen visar även hur säker modellen är på sin gissning i procent, vilket gör det tydligare när en prediktion är osäker (till exempel vid siffror som 8 eller 9 som ofta förväxlas).
 
 ## Begränsningar och möjliga förbättringar
 
@@ -64,6 +65,8 @@ Implementera beskärning och centrering av ritningen, och lägga till en knapp f
 **G eller VG?**
 **Vilket betyg tycker du själv att arbetet motsvarar – G eller VG?**
 
-Jag tycker att arbetet motsvarar VG. Jag har inte bara fått koden att fungera, utan också förstått och kunnat förklara varför den fungerar som den gör — till exempel varför `st.cache_resource` behövs istället för `st.cache_data`, och varför användarens ritning måste normaliseras och formateras exakt som MNIST-datan för att modellen ska förstå den.
+Jag tycker att arbetet motsvarar **VG**. Jag har inte bara fått koden att fungera, utan också förstått varför olika delar behövs, till exempel `st.cache_resource` och varför bilden måste ha samma format som MNIST.
 
-Jag har också gjort och motiverat egna tekniska val, som att skilja på träning av modellen (`train_model.py`) och själva appen (`app.py`). Jag testade dessutom en förbättring (att beskära och centrera ritningen, likt MNIST-formatet), men stötte på tekniska problem som jag inte hann lösa i tid. Istället för att lämna in trasig kod valde jag att gå tillbaka till en enklare men fungerande lösning, och beskriver detta försök och varför det inte fungerade i rapporten. Jag tycker att det visar att jag kan resonera kring lösningens begränsningar och alternativa vägar, inte bara att jag kan bygga något som fungerar.
+Jag har också gjort egna tekniska val och testat att förbättra appen genom att beskära och centrera bilden. Det fungerade inte helt, så jag valde att använda en enklare lösning som fungerar och beskrev problemet i rapporten.
+
+Jag tycker att detta visar att jag kan förstå problemen, testa olika lösningar och förklara mina val.
