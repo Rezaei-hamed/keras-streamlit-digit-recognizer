@@ -27,7 +27,7 @@ Ett problem jag stötte på var att canvas-biblioteket krävde en extra inställ
 
 ## Resultat
 
-Modellen fick 97,58 % rätt på testdatan. Appen fungerar och ger en prediktion direkt när man ritar. För siffror som är tydligt ritade (till exempel 1, 3, 7) fungerar det bra och stabilt. Appen visar även hur säker modellen är på sin gissning i procent, vilket gör det tydligare när en prediktion är osäker (till exempel vid siffror som 8 eller 9 som ofta förväxlas).
+Modellen fick 97,70 % rätt på testdatan. Appen fungerar och ger en prediktion direkt när man ritar. För siffror som är tydligt ritade (till exempel 1, 3, 7) fungerar det bra och stabilt. Appen visar även hur säker modellen är på sin gissning i procent, vilket gör det tydligare när en prediktion är osäker (till exempel vid siffror som 8 eller 9 som ofta förväxlas).
 
 ## Begränsningar och möjliga förbättringar
 

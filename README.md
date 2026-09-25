@@ -38,7 +38,7 @@ keras-streamlit-demo/
 ## Om modellen och data
 
 Modellen är en enkel neural network (Flatten + Dense-lager) tränad på MNIST-datasetet, som ingår i Keras (`keras.datasets.mnist`).
- Modellen uppnådde 97.58% noggrannhet på testdatan. För att träna om modellen,
+ Modellen uppnådde 97.70% noggrannhet på testdatan. För att träna om modellen,
   kör:
 
 ```bash
